@@ -1,0 +1,405 @@
+<!DOCTYPE html >
+<html lang="tr" class=" no-touch">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"  href="assets/favicon.png" sizes="16x19">
+    <title>ekşi sözlük - kutsal bilgi kaynağı</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header-f">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+              <div class="col-md-1">
+                <img src="assets/logo.png">
+              </div>
+              <div class="col-md-8">
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <form class="d-flex col-md-5 nav-form mt-2" >
+                          <input class="form-control nav-input" type="search" placeholder="başlık, #entry, @yazar" aria-label="Search" >
+                          <button class="btn btn-outline-success nav-button" type="submit"><img src="assets/search.png" alt="" ></button>
+                      </form>
+                  </div>
+              </div>
+                <nav id="top-navigation" class="col-md-3" itemscope="">
+                  <ul>
+                      <li>
+                        <a id="top-login-link link-dec" class="r-text" href="#">
+                          <i class="far fa-user"></i>
+                          ben
+                        </a>
+                      </li>
+                      <li>
+                        <button type="submit" class="btn btn-green p-1 pe-2  r-text "><i class="far fa-comment-alt me-2 ms-2"></i>mesaj</button>
+                      </li>
+                      <li>
+                        <a id="top-login-link link-dec" class="r-text" href="#" title="olaylar olaylar">
+                          olay
+                        </a>
+                      </li>
+                      <li>
+                        <div class="dropdown">
+                          <i class="fas fa-ellipsis-h link dropdown-toggle"  type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" ></i>
+                          <ul class="dropdown-menu login-m"  aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item text-start" href="#">kanallar</a></li>
+                            <li><a class="dropdown-item text-start" href="#">ayarlar</a></li>
+                            <li><a class="dropdown-item text-start" href="#">gece modu</a></li>
+                            <li><a class="dropdown-item text-start" href="#">kanallar</a></li>
+                            <hr class="m-0"> 
+                            <li><a class="dropdown-item text-start" href="#">terk</a></li>
+                          </ul>
+                          </div>
+                      </li>
+                  </ul>
+              </nav>
+            </div>
+        </nav>
+        <div class="container">
+          <nav id="sub-navigation" class="nav">
+            <ul id="quick-index-nav">
+                <li><a href="#" title="dünyamızda neler olup bitiyor">gündem</a></li>
+                <li><a href="#" title="dünün en beğenilen entry'leri">debe</a></li> 
+                <li><a href="#" title="dünyamızda neler olup bitiyor">sorunsallar</a></li>
+                <li class="nav-channel-item"><a class="index-link" href="#" title="futbol, basketbol, tenis ve curling gibi ata sporları">#spor</a></li>
+                <li class="nav-channel-item"><a class="index-link" href="#" title="sevgili, eski sevgili ve hoşlanılan kız">#ilişkiler</a></li>
+                <li class="nav-channel-item"><a class="index-link" href="#" title="partiler, politikacılar, terör, savaş kan ve korku">#siyaset</a></li>
+                <ul class="navbar-nav me-0 mb-2 mb-lg-0 menu" >
+                    <li class="nav-item dropdown ">
+                      <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-ellipsis-h"></i>
+                      </a>
+                      <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">tarihte bugün</a></li>
+                        <li><a class="dropdown-item" href="#">#seyahat</a></li>
+                        <li><a class="dropdown-item" href="#">#müzik</a></li>
+                        <li><a class="dropdown-item" href="#">#tv</a></li>
+                        <li><a class="dropdown-item" href="#">#haber</a></li>
+                        <li><a class="dropdown-item" href="#">#bilim</a></li>
+                        <li><a class="dropdown-item" href="#">#edebiyat</a></li>
+                        <li><a class="dropdown-item" href="#">#eğitim</a></li>
+                        <li><a class="dropdown-item" href="#">#ekonomi</a></li>
+                      </ul>
+                    </li>
+                </ul>
+                <li>
+                  <a href="https://www.youtube.com/penavideo" target="_blank">
+                    <img src="assets/pena-logo.png" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="https://seyler.eksisozluk.com" target="_blank" >
+                    <img src="assets/eksiseyler.png" alt="">
+                  </a>
+              </li>
+            </ul>
+        </nav>
+        </div>
+        <hr class="mt-0">
+    </header>
+    <main>
+      <div class="container">
+        <div class="row mt-3">
+          <!-- KATEGORILER -->
+          <div class="col-3">
+            <div class="list-group " >
+                <h2 class="debe-h2 ms-3">#iliskiler</h2>
+              <div>
+                <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                  <span class="me-2 font-nav">Cras justo odio<span class="float-end font-nav">4</span></span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                  <span class="me-2 font-nav">Cras justo odio<span class="float-end font-nav">4</span></span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action" aria-current="true" >
+                  <span class="me-2 font-nav">Cras justo odio<span class="float-end font-nav">4</span></span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action" aria-current="true" >
+                  <span class="me-2 font-nav">Cras justo odio<span class="float-end font-nav">4</span></span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action" aria-current="true" >
+                  <span class="me-2 font-nav">Cras justo odio<span class="float-end font-nav">4</span></span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                  <span class="me-2 font-nav">Cras justo odio<span class="float-end font-nav">4</span></span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                  <span class="me-2 font-nav">Cras justo odio<span class="float-end font-nav">4</span></span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                  <span class="me-2 font-nav">Cras justo odio<span class="float-end font-nav">4</span></span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                  <span class="me-2 font-nav">Cras justo odio<span class="float-end font-nav">4</span></span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                  <span class="me-2 font-nav">Cras justo odio<span class="float-end font-nav">4</span></span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                  <span class="me-2 font-nav">Cras justo odio<span class="float-end font-nav">4</span></span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                  <span class="me-2 font-nav">Cras justo odio<span class="float-end font-nav">4</span></span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                  <span class="me-2 font-nav">Cras justo odio<span class="float-end font-nav">4</span></span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                  <span class="me-2 font-nav">Cras justo odio<span class="float-end font-nav">4</span></span>
+                </a>
+              </div>
+
+            </div>
+          </div>
+          <!-- !KATEGORILER -->
+          <!-- SORULAR -->
+          <div class="col-6" >
+            <h2 class="link-dec">Gündemdeki herhangi bi konu</h2>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="custom-text-light">
+                <p>şükela: <a href="#" class="link-dec" >tümü</a> | <a href="#" class="link-dec">bugün</a> </p>
+              </div>
+              <div class="col-sm-0">
+                <div class="pager" data-currentpage="1" data-pagecount="4">
+                  <select>
+                    <option selected="selected">1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                  </select>
+                    /
+                    <a href="#" title="son sayfa" class="last">4</a>
+                    <a href="#" rel="next" title="sonraki sayfa" class="next">
+                      »
+                    </a>
+                </div>
+              </div>
+            </div>
+            <div class="card text-left mb-3">
+              <div class="card-body">
+                <div class="mt-3">
+                  <p class="text-muted">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ducimus dicta saepe porro fugiat inventore. Pariatur nostrum
+                    aperiam iste. Dolor quo quisquam cumque, fuga libero iusto
+                    placeat possimus incidunt maxime obcaecati.
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="custom-text-light">
+                      <i class="fab fa-facebook comment comment-f me-2"></i>
+                      <i class="fab fa-twitter comment comment-t me-3"></i>
+                      <i class="fas fa-angle-up comment-up me-2"></i>
+                      <i class="fas fa-angle-down comment-down"></i>
+                    </div>
+                    <div class="custom-text-light">
+                        <ul class="d-flex">
+                          <li><a href="#"  class="me-2 comment comment-h"> 09.02.2021 18:03 </a></li>
+                          <li><a href="#" class="link link-h me-2">Burçin Eren</a></li>
+                          <li>
+                            <div class="dropdown">
+                            <i class="fas fa-ellipsis-h link dropdown-toggle"  type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" ></i>
+                            <ul class="dropdown-menu drpdown-m" aria-labelledby="dropdownMenuButton1">
+                              <li><a class="dropdown-item text-center sikayet" href="#">şikayet</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card text-left mb-3">
+              <div class="card-body">
+                <div class="mt-3">
+                  <p class="text-muted">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ducimus dicta saepe porro fugiat inventore. Pariatur nostrum
+                    aperiam iste. Dolor quo quisquam cumque, fuga libero iusto
+                    placeat possimus incidunt maxime obcaecati.
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="custom-text-light">
+                      <i class="fab fa-facebook comment comment-f me-2"></i>
+                      <i class="fab fa-twitter comment comment-t me-3"></i>
+                      <i class="fas fa-angle-up comment-up me-2"></i>
+                      <i class="fas fa-angle-down comment-down"></i>
+                    </div>
+                    <div class="custom-text-light">
+                        <ul class="d-flex">
+                          <li><a href="#"  class="me-2 comment comment-h"> 09.02.2021 18:03 </a></li>
+                          <li><a href="#" class="link link-h me-2">Burçin Eren</a></li>
+                          <li>
+                            <div class="dropdown">
+                            <i class="fas fa-ellipsis-h link dropdown-toggle"  type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" ></i>
+                            <ul class="dropdown-menu drpdown-m" aria-labelledby="dropdownMenuButton1">
+                              <li><a class="dropdown-item text-center sikayet" href="#">şikayet</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card text-left mb-3">
+              <div class="card-body">
+                <div class="mt-3">
+                  <p class="text-muted">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ducimus dicta saepe porro fugiat inventore. Pariatur nostrum
+                    aperiam iste. Dolor quo quisquam cumque, fuga libero iusto
+                    placeat possimus incidunt maxime obcaecati.
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="custom-text-light">
+                      <i class="fab fa-facebook comment comment-f me-2"></i>
+                      <i class="fab fa-twitter comment comment-t me-3"></i>
+                      <i class="fas fa-angle-up comment-up me-2"></i>
+                      <i class="fas fa-angle-down comment-down"></i>
+                    </div>
+                    <div class="custom-text-light">
+                        <ul class="d-flex">
+                          <li><a href="#"  class="me-2 comment comment-h"> 09.02.2021 18:03 </a></li>
+                          <li><a href="#" class="link link-h me-2">Burçin Eren</a></li>
+                          <li>
+                            <div class="dropdown">
+                            <i class="fas fa-ellipsis-h link dropdown-toggle"  type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" ></i>
+                            <ul class="dropdown-menu drpdown-m" aria-labelledby="dropdownMenuButton1">
+                              <li><a class="dropdown-item text-center sikayet" href="#">şikayet</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card text-left mb-3">
+              <div class="card-body">
+                <div class="mt-3">
+                  <p class="text-muted">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ducimus dicta saepe porro fugiat inventore. Pariatur nostrum
+                    aperiam iste. Dolor quo quisquam cumque, fuga libero iusto
+                    placeat possimus incidunt maxime obcaecati.
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="custom-text-light">
+                      <i class="fab fa-facebook comment comment-f me-2"></i>
+                      <i class="fab fa-twitter comment comment-t me-3"></i>
+                      <i class="fas fa-angle-up comment-up me-2"></i>
+                      <i class="fas fa-angle-down comment-down"></i>
+                    </div>
+                    <div class="custom-text-light">
+                        <ul class="d-flex">
+                          <li><a href="#"  class="me-2 comment comment-h"> 09.02.2021 18:03 </a></li>
+                          <li><a href="#" class="link link-h me-2">Burçin Eren</a></li>
+                          <li>
+                            <div class="dropdown">
+                            <i class="fas fa-ellipsis-h link dropdown-toggle"  type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" ></i>
+                            <ul class="dropdown-menu drpdown-m" aria-labelledby="dropdownMenuButton1">
+                              <li><a class="dropdown-item text-center sikayet" href="#">şikayet</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card text-left mb-3">
+                <div class="card-body">
+                  <div class="mt-3">
+                      <div class="col-12 pager">
+                        <a href="#" title="bkz" class="last">(bkzz:)</a>
+                        <a href="#" title="başlık ya da entry'ye link" class="last link">hede</a>
+                        <a href="#" title="akıllı bkz" class="last">*</a>
+                        <a href="#" title="şpoyler ibaresi" class="last">-spoiler-</a>
+                        <a href="#" title="web linki" class="last">http://</a>
+                        <a href="#" title="görsel yükle" class="last">görsel</a>
+                      </div>
+                      <div class="form-floating col-12">
+                        <textarea class="form-control" placeholder="'ekşi sözlük 22 yaşında' hakkında bilgi edinin" id="floatingTextarea2" style="height: 150px; width: 100%;"></textarea>
+                      </div>
+                      <div class="col-2">
+                        <button type="submit" class="btn btn-green">yolla</button>
+                      </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <!-- !SORULAR -->
+          <div class="col-3">
+            <div class="d-flex position-relative b-top-color">
+              <div class="mt-2">
+                <a href="#" class="title"><i class="fas fa-tint icon-t me-2 "></i>KÜLTÜR</a>  
+                <p class="f-color "><b>Cras sit amet nibh libero, in gravida nulla. Cras sit amet nibh libero, in gravida nulla.</b> </p>
+              </div>
+              <img src="assets/r1.jpg" class="flex-shrink-0" alt="">
+            </div>
+            <div class="d-flex position-relative b-bot-color ">
+              <div class="mt-2">
+                <a href="#" class="title"><i class="fas fa-tint icon-t me-2 "></i>KÜLTÜR</a>  
+                <p class="f-color"><b>Cras sit amet nibh libero, in gravida nulla. Cras sit amet nibh libero, in gravida nulla.</b> </p>
+              </div>
+              <img src="assets/r1.jpg" class="flex-shrink-0 " alt="">
+            </div>
+            <div class="d-flex position-relative b-bot-color">
+              <div class="mt-2">
+                <a href="#" class="title"><i class="fas fa-tint icon-t me-2 "></i>KÜLTÜR</a>  
+                <p class="f-color"><b>Cras sit amet nibh libero, in gravida nulla. Cras sit amet nibh libero, in gravida nulla.</b> </p>
+              </div>
+              <img src="assets/r1.jpg" class="flex-shrink-0 " alt="">
+            </div>
+            <div class="eksi col-md-12">
+              <div class="eksi-div">
+                <img class="ms-2 mt-3 me-1 eski-logo" src="assets/i-1.png" alt="">
+                <span class="es-p mt-0">ekşi sözlük <i class="fas fa-check-circle me-2 check-i"></i></span>
+                <div>
+                  <button class="btn badge bg-light text-dark mt-4 ms-2 p-1"><i class="fab fa-facebook-square me-2 face-color"></i>Sayfayı Beğen</button>
+                  <button class="btn badge bg-light text-dark mt-4 ms-2 me-2 p-1 float-end"><i class="fas fa-pencil-alt me-2"></i>Kaydol</button>
+                </div>
+              </div>
+            </div>
+            <div class="eksi-2 col-md-12 mt-3">
+              <div class="eksi-div">
+                <img class="ms-2 mt-3 me-1 eski-logo " src="assets/i-2.png" alt="">
+                <span class="es-p mt-0">ekşi şeyler</span>
+                <div>
+                  <button class="btn badge bg-light text-dark mt-4 ms-2 p-1"><i class="fab fa-facebook-square me-2 face-color"></i>Sayfayı Beğen</button>
+                  <button class="btn badge bg-light text-dark mt-4 ms-2 me-2 p-1 float-end"><i class="fas fa-info-circle me-2"></i>Daha Fazla Bilgi Al</button>
+                </div>
+              </div>
+            </div>
+            <div class="">
+              <button class="btn badge  text-white mt-4 ms-2 p-2 twit-i"><i class="fab fa-twitter me-2"></i>Takip et: @sozluk</button>
+            </div>
+          </div>
+          <div class="col-3"></div>
+          <div class="col-9">
+            <nav id="sub-navigation-footer" class="nav">
+              <ul id="quick-index">
+                  <li><a href="#">iletişim</a></li>
+                  <li><a href="#">reklam</a></li> 
+                  <li><a href="#">kariyer</a></li>
+                  <li><a href="#">kullanım koşulları</a></li>
+                  <li><a href="#">gizlilik politikamız</a></li>
+                  <li><a href="#">sss</a></li>
+                  <li><a href="#">istatistikler</a></li>
+                  <li><a href="#">sub-etha</a></li>
+                  <li><a href="#">instagram</a></li>
+                  <li><a href="#">twitter</a></li>
+                  <li><a href="#">facebook</a></li>
+              </ul>
+          </nav>
+          </div>
+          
+        </div>
+      </div>
+    </main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>

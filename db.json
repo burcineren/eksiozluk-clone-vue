@@ -1,0 +1,218 @@
+{
+  "categories": [
+    {
+      "title": "beşiktaş",
+      "id": 1
+    },
+    {
+      "title": "kahvaltıda çorba içmek",
+      "id": 2
+    },
+    {
+      "title": "motosikletten düşmek",
+      "id": 3
+    },
+    {
+      "title": "sabahattin ali",
+      "id": 4
+    },
+    {
+      "title": "getir.com",
+      "id": 5
+    },
+    {
+      "title": "masumiyet",
+      "id": 6
+    },
+    {
+      "title": "evden çalışmak",
+      "id": 7
+    },
+    {
+      "title": "ekşi sözlük iş ağı",
+      "id": 8
+    },
+    {
+      "title": "sadakatsiz",
+      "id": 9
+    },
+    {
+      "title": "türkiye",
+      "id": 10
+    },
+    {
+      "title": "the office",
+      "id": 11
+    },
+    {
+      "title": "exxen",
+      "id": 12
+    }
+  ],
+  "commits": [
+    {
+      "title": "sergen yalçın",
+      "details": "sergen yalçın'ın sözleşme takıntısı yüzünden şampiyonluğu kaptırmasından korktuğum futbol takımı. ülkemizin futbolu kötü olduğu için yetenek sizsiniz'in jüri üyesini teknik direktör yapıp iki gazla başarılı olmasını bekliyoruz.",
+      "categoryId": 1,
+      "id": 1,
+      "created_at": "2021-01-08T08:14:49.578Z",
+      "userId": 1
+    },
+    {
+      "title": "beşiktaş",
+      "details": "taraftarlarımızın eleştirilerini ve yöntemlerini seviyorum. sergeni eleştiren de olmuş, beğenen de. benim fikrim de inanılmaz iyi işler yapmadığı ama berbat da olmadığı yönünde. fakat dinamik bir taraftarımız var,erkenden eleştiriler yapıyoruz ve hataları gündem yapıyoruz ki değişim yaşayalım,bu güzel bir durum. başka kulüp taraftarları 1-2 futbolcunun veya teknik direktörlerinin sihir yapmasını bekliyor ama o adamlar bitik farkında değiller,biz öyle yapmayıp dozunda eleştirileri,mantıklı eleştirileri gündem yaparsak bir şekilde gündem oluyor bu durum. taraftarımızın hocaya,yönetime veya futbolculara tapınmamasını seviyorum.sevgimiz beşiktaşa, kişilere değil.",
+      "categoryId": 12,
+      "id": 2,
+      "created_at": "2021-01-05T09:14:49.578Z",
+      "userId": 1
+    },
+    {
+      "title": "sergen yalçın",
+      "details": "sergen yalçın'ın sözleşme takıntısı yüzünden şampiyonluğu kaptırmasından korktuğum futbol takımı. ülkemizin futbolu kötü olduğu için yetenek sizsiniz'in jüri üyesini teknik direktör yapıp iki gazla başarılı olmasını bekliyoruz.",
+      "categoryId": 1,
+      "id": 3,
+      "created_at": "2021-01-07T13:14:49.578Z",
+      "userId": 2
+    },
+    {
+      "title": "futbol kaliteli oyuncuları",
+      "details": "eğer futbol kaliteli oyuncuları sahaya atıp hadi oynayın bakalım denince kazanılan bir oyun olsaydı sergen'in kaka, yönetimin sihirli dokunuşu sayesinde bu noktada olduğumuz önermesine katılabilirdim ancak futbol böyle bir oyun değil. öyle olsaydı tolga zengin, serdar kurtuluş, ismail köybaşı, rhodolfo/alexis delgado, marcelo defans hattıyla şampiyon olamazdın. :)",
+      "categoryId": 1,
+      "id": 4,
+      "created_at": "2021-01-09T11:14:49.578Z",
+      "userId": 2
+    },
+    {
+      "title": "kahvaltıda çorba içmek",
+      "details": "bazıları osmanlı döneminde de çay içiliyor zannediyor herhalde. ulan padişahlar bile kahvaltıda çorba içiyordu. nasıl manyaklık olsun.",
+      "categoryId": 2,
+      "created_at": "2021-01-09T12:08:41.760Z",
+      "userId": 2,
+      "id": 5
+    },
+    {
+      "title": "kahvaltıda çorba içmek",
+      "details": "bazıları osmanlı döneminde de çay içiliyor zannediyor herhalde. ulan padişahlar bile kahvaltıda çorba içiyordu. nasıl manyaklık olsun.",
+      "categoryId": 2,
+      "created_at": "2021-01-09T12:14:49.578Z",
+      "userId": 2,
+      "id": 6
+    },
+    {
+      "title": "kahvaltıda çorba içmek",
+      "details": "tarhana pek güzel olur. bu kış çok içtim.",
+      "categoryId": 2,
+      "created_at": "2021-01-09T12:38:20.746Z",
+      "userId": 2,
+      "id": 7
+    },
+    {
+      "title": "motosikletten düşmek",
+      "details": "motosiklet sürmek çok zevklidir hatta (bkz: orgazmdan daha zevkli anlar) kategorisine girer. fakat çok çok dikkat etmek gerekiyor. ekipmansız ve dikkatsiz sürülmemeli. like a kamu spotu",
+      "categoryId": 3,
+      "created_at": "2021-01-09T12:39:42.097Z",
+      "id": 8,
+      "userId": 3
+    },
+    {
+      "title": "motosikletten düşmek",
+      "details": "yaşamla ölüm arasındaki seçimi nasıl düştüğünüz değil düşüp yerde kaydıktan sonra nerede durduğunuz belirler.",
+      "categoryId": 3,
+      "created_at": "2021-01-09T12:44:34.336Z",
+      "id": 9,
+      "userId": 3
+    },
+    {
+      "title": "sabahattin ali",
+      "details": "dünyada hayatın bir tek manası varsa o da sevmektir. hatta mukabele edilmesini bile beklemeden sadece sevmek. başka bir insanı bahtiyar edebilmek, kendini bahtiyar edebilmekten daha güç fakat daha insancadır. bugün böyle düşünenlere saf hatta enayi derler. fakat ne derlerse desinler, biz kalbimizin ve kafamızın doğru bulduğu şeyleri etrafın ne dediğine bakmadan yapmalıyız. gazeteci, yazar, öğretmendi.",
+      "categoryId": 4,
+      "created_at": "2021-01-16T11:24:22.389Z",
+      "id": 10,
+      "userId": 3
+    },
+    {
+      "title": "sabahattin ali",
+      "details": "ondan ayrılmanın bana güç geleceğini biliyordum. fakat bunun bu kadar korkunç, bu kadar acı olacağını tasavvur edememiştim.",
+      "categoryId": 4,
+      "created_at": "2021-01-16T11:26:27.292Z",
+      "id": 11,
+      "userId": 3
+    },
+    {
+      "title": "sabahattin ali",
+      "details": "içimde, bir yolculukta tanışıp alıştığım, fakat pek çabuk ayrılmaya mecbur olduğum bir insana veda eder gibi bir his vardı.",
+      "categoryId": 4,
+      "created_at": "2021-01-17T10:31:33.522Z",
+      "id": 12,
+      "userId": 3
+    },
+    {
+      "title": "getir.com",
+      "details": "ben para almadım ama güzel sistemleri var. adamlar online siparişte resmen devrim yaptı. övülmesine niye bu kadar şaşıran çıktı hayret. :)",
+      "categoryId": 5,
+      "created_at": "2021-01-28T19:49:46.611Z",
+      "userId": 2,
+      "id": 13
+    },
+    {
+      "title": "masumiyet",
+      "details": "şimdilik iyi giden dizi. ela rolündeki kız gayet iyi rol yapıyor.",
+      "categoryId": 6,
+      "created_at": "2021-01-28T19:49:46.611Z",
+      "userId": 2,
+      "id": 13
+    },
+    {
+      "title": "evden çalışmak",
+      "details": "ben para almadım ama güzel sistemleri var. adamlar online siparişte resmen devrim yaptı. övülmesine niye bu kadar şaşıran çıktı hayret. :)",
+      "categoryId": 7,
+      "created_at": "2021-01-28T19:49:46.611Z",
+      "userId": 2,
+      "id": 13
+    },
+    {
+      "title": "ekşi sözlük iş ağı",
+      "details": "özellikle tez yazanlar italya ile ilgili bir şeyler yazacaklarsa yardımcı olurum, hukuk metinlerinin tercümelerini yaparım.",
+      "categoryId": 5,
+      "created_at": "2021-01-28T19:49:46.611Z",
+      "userId": 2,
+      "id": 13
+    },
+    {
+      "title": "sadakatsiz",
+      "details": "iyi dizi",
+      "categoryId": 9,
+      "created_at": "2021-01-28T19:49:46.611Z",
+      "userId": 2,
+      "id": 13
+    },
+    {
+      "title": "türkiye",
+      "details": "içimdekileri hangi başlığa döksem bilemedim. burada buldum kendimi.",
+      "categoryId": 10,
+      "created_at": "2021-01-28T19:49:46.611Z",
+      "userId": 2,
+      "id": 13
+    },
+    {
+      "title": "the office",
+      "details": "bir sezon önce araba sürmekten ödü kopan karakterin, ertesi sezon hız yapıp kadın polis tavladığı dizilere karşı devamlılık takibi konusunda aşmış dizi. üstelik bunu göze sokmadan, arka plandaki minik sahneler için bile yapar.",
+      "categoryId": 11,
+      "created_at": "2021-01-28T19:49:46.611Z",
+      "userId": 2,
+      "id": 13
+    },
+    {
+      "title": "exxen",
+      "details": "ailem sayesinde çok zenginim ama netflix’i arkadaştan alıyorum. adamın entrysinin neresinden tutarsan tut elinde kalıyor. ",
+      "categoryId": 12,
+      "created_at": "2021-01-28T19:49:46.611Z",
+      "userId": 2,
+      "id": 13
+    }
+    
+
+  ],
+  "users": [],
+  "favorites": []
+}
