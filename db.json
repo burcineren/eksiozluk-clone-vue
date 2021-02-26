@@ -209,10 +209,37 @@
       "created_at": "2021-01-28T19:49:46.611Z",
       "userId": 2,
       "id": 13
+    },
+    {
+      "title": "fdsf",
+      "details": "fdsfdsfdsf",
+      "categoryId": 10,
+      "created_at": "2021-02-25T23:14:23.646Z",
+      "id": 14
     }
-    
-
   ],
-  "users": [],
+  "users": [
+    {
+      "nick": "burcin",
+      "email": "burcin.ern969@gmail.com",
+      "password": null,
+      "categoryId": 8,
+      "id": 1
+    },
+    {
+      "nick": "burcin",
+      "email": "burcin.ern969@gmail.com",
+      "password": "111",
+      "categoryId": 6,
+      "id": 3
+    },
+    {
+      "nick": "tugce",
+      "email": "tugce-7@hotmail.com",
+      "password": "123",
+      "categoryId": 4,
+      "id": 4
+    }
+  ],
   "favorites": []
 }

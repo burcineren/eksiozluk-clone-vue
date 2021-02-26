@@ -26,7 +26,8 @@
                     </div> -->
                 </div>
             </div>
-            <nav id="top-navigation" class="col-md-3 ms-5">
+            
+            <!-- <nav id="top-navigation" class="col-md-3 ms-5">
               <ul>
                   <li>
                     <div class="d-grid gap-2 mb-3">
@@ -36,17 +37,44 @@
                       </router-link>
                     </div></li>
                   <li>
-                    <a id="top-login-link link-dec" href="#">
+                    <router-link to="/giris" class="top-login-link link-dec">
                       giriş
+                      </router-link>
+                  </li>
+                  <li>
+                      <router-link to="/register" class="top-registration-link link-dec">
+                          kayıt ol
+                      </router-link>
+                  </li>
+              </ul>
+          </nav> -->
+          <nav  id="top-navigation" class="col-md-3" itemscope="">
+              <ul v-if="!isAuthenticated">
+                  <li>
+                    <a id="top-login-link link-dec" class="r-text" href="#">
+                      <i class="far fa-user"></i>
+                      {{currentUser.nick}}
                     </a>
                   </li>
                   <li>
-                    
-                      <router-link to="/kayit" class="top-registration-link link-dec">
-                          kayıt ol
-                      </router-link>
-                      
-                    
+                    <button type="submit" class="btn btn-green p-1 pe-2  r-text "><i class="far fa-comment-alt me-2 ms-2"></i>mesaj</button>
+                  </li>
+                  <li>
+                    <a id="top-login-link link-dec" class="r-text" href="#" title="olaylar olaylar">
+                      olay
+                    </a>
+                  </li>
+                  <li>
+                    <div class="dropdown">
+                      <a @click="loginOpened = !loginOpened" href="#"> <i class="fas fa-ellipsis-h link dropdown-toggle"  type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" ></i></a>
+                      <ul :class="{show : loginOpened}" class="dropdown-menu login-m"  aria-labelledby="dropdownMenuButton1">
+                        <li><router-link to="/my-comment" class="dropdown-item text-start">yorumlar</router-link></li>
+                        <li><router-link to="/favorites" class="dropdown-item text-start">favoriler</router-link></li>
+                        <li><router-link to="/account" class="dropdown-item text-start">hesabım</router-link></li>
+                        <hr class="m-0"> 
+                        <li><a class="dropdown-item text-start" href="#" @click.prevent="logout">terk</a></li>
+                      </ul>
+                      </div>
                   </li>
               </ul>
           </nav>
@@ -96,11 +124,13 @@
     </header>
 </template>
 <script>
+import { mapGetters, mapMutations } from 'vuex';
 export default {
     data(){
         return{
             menuOpened :false,
-            searchKey: null
+            searchKey: null,
+            loginOpened : false
         };
     },
     methods :{
@@ -109,6 +139,15 @@ export default {
         searchKey: this.searchKey
       });
     },
+    ...mapMutations({
+      logout :"users/logout"
+    })
+    },
+    computed: {
+      ...mapGetters({
+        currentUser : "users/currentUser",
+        isAuthenticated : "users/isAuthenticated"
+      })
     }
 }
 </script>

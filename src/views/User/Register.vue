@@ -4,7 +4,7 @@
         <category-sidebar @category-select-event="categoryId = $event" />
         <div class="col-6">
             <h6 class="mt-5 mb-5"><b>yeni kullanıcı kaydı</b></h6>
-            <form class="row g-3 col-7">
+            <div class="row g-3 col-7">
                 <div class="col-12">
                     <label for="exampleInputEmail1" class="form-label">nick</label>
                     <input v-model="userData.nick" type="text" class="form-control" aria-label="nick">
@@ -12,6 +12,17 @@
                 <div class="col-12">
                   <label for="exampleInputEmail1" class="form-label">e-mail</label>
                   <input v-model="userData.email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="col-12">
+                  <label for="inputPassword4" class="form-label">şifre</label>
+                    <input
+                    v-model="userData.password"
+                    type="text"
+                    class="form-control"
+                  />
+                </div>
+                <div class="col-12">
+                  <router-link to="/giris" class="p-0 m-0 btn btn-link text-primary">zaten üyeyim</router-link>
                 </div>
                <div class="mb-3">
               <label class="form-label">İlgi Duyduğunuz Kategori</label>
@@ -76,16 +87,16 @@
                   </div>
                 </div> -->
                 <div class="col-12">
-                  <button @click="onSave" type="submit" class="btn btn-green col-12">giriş yapmaya çabala</button>
+                  <button @click="onSave({ ...userData })" type="submit" class="btn btn-green col-12">kayıt ol işte böyle</button>
                 </div>
-              </form>
+              </div>
           </div>
       </div>
     </div>
 </template>
 <script>
 import categorySidebar from "@/components/appShared/categorySidebar"
-import { mapGetters } from 'vuex'
+import { mapGetters, mapActions } from 'vuex'
 export default {
   components:{
     categorySidebar
@@ -95,14 +106,19 @@ export default {
       userData : { 
         nick : null,
         email : null,
+        password : "",
         categoryId: null
       }
     };
   },
   methods : {
-    onSave(){
-      console.log("this.userData",this.userData)
-    }
+    ...mapActions({
+      onSave : "users/register"
+
+    }),
+    // onSave(){
+    //   this.$store.dispatch("users/register",{...this.userData})
+    // }
   },
   computed: {
     ...mapGetters({
